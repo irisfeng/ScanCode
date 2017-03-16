@@ -10,10 +10,13 @@
 		2190287D1E7A3004002D9733 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190287C1E7A3004002D9733 /* main.m */; };
 		219028801E7A3004002D9733 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190287F1E7A3004002D9733 /* AppDelegate.m */; };
 		219028831E7A3004002D9733 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219028821E7A3004002D9733 /* FirstViewController.m */; };
-		219028861E7A3004002D9733 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219028851E7A3004002D9733 /* SecondViewController.m */; };
+		219028861E7A3004002D9733 /* ScanCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 219028851E7A3004002D9733 /* ScanCodeVC.m */; };
 		219028891E7A3004002D9733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219028871E7A3004002D9733 /* Main.storyboard */; };
 		2190288B1E7A3004002D9733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2190288A1E7A3004002D9733 /* Assets.xcassets */; };
 		2190288E1E7A3004002D9733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2190288C1E7A3004002D9733 /* LaunchScreen.storyboard */; };
+		219028971E7A3ABD002D9733 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219028961E7A3ABD002D9733 /* ThirdViewController.m */; };
+		219028991E7A4978002D9733 /* WikitudeNativeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 219028981E7A4978002D9733 /* WikitudeNativeSDK.framework */; };
+		2190289B1E7A499F002D9733 /* ZBarSDK in Resources */ = {isa = PBXBuildFile; fileRef = 2190289A1E7A499F002D9733 /* ZBarSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +26,16 @@
 		2190287F1E7A3004002D9733 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		219028811E7A3004002D9733 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		219028821E7A3004002D9733 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		219028841E7A3004002D9733 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		219028851E7A3004002D9733 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		219028841E7A3004002D9733 /* ScanCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCodeVC.h; sourceTree = "<group>"; };
+		219028851E7A3004002D9733 /* ScanCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCodeVC.m; sourceTree = "<group>"; };
 		219028881E7A3004002D9733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2190288A1E7A3004002D9733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2190288D1E7A3004002D9733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2190288F1E7A3004002D9733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219028951E7A3ABD002D9733 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		219028961E7A3ABD002D9733 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		219028981E7A4978002D9733 /* WikitudeNativeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WikitudeNativeSDK.framework; sourceTree = "<group>"; };
+		2190289A1E7A499F002D9733 /* ZBarSDK */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ZBarSDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219028991E7A4978002D9733 /* WikitudeNativeSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,12 +69,16 @@
 		2190287A1E7A3004002D9733 /* ScanCode */ = {
 			isa = PBXGroup;
 			children = (
+				2190289A1E7A499F002D9733 /* ZBarSDK */,
+				219028981E7A4978002D9733 /* WikitudeNativeSDK.framework */,
 				2190287E1E7A3004002D9733 /* AppDelegate.h */,
 				2190287F1E7A3004002D9733 /* AppDelegate.m */,
 				219028811E7A3004002D9733 /* FirstViewController.h */,
 				219028821E7A3004002D9733 /* FirstViewController.m */,
-				219028841E7A3004002D9733 /* SecondViewController.h */,
-				219028851E7A3004002D9733 /* SecondViewController.m */,
+				219028841E7A3004002D9733 /* ScanCodeVC.h */,
+				219028851E7A3004002D9733 /* ScanCodeVC.m */,
+				219028951E7A3ABD002D9733 /* ThirdViewController.h */,
+				219028961E7A3ABD002D9733 /* ThirdViewController.m */,
 				219028871E7A3004002D9733 /* Main.storyboard */,
 				2190288A1E7A3004002D9733 /* Assets.xcassets */,
 				2190288C1E7A3004002D9733 /* LaunchScreen.storyboard */,
@@ -143,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2190289B1E7A499F002D9733 /* ZBarSDK in Resources */,
 				2190288E1E7A3004002D9733 /* LaunchScreen.storyboard in Resources */,
 				2190288B1E7A3004002D9733 /* Assets.xcassets in Resources */,
 				219028891E7A3004002D9733 /* Main.storyboard in Resources */,
@@ -156,7 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219028861E7A3004002D9733 /* SecondViewController.m in Sources */,
+				219028861E7A3004002D9733 /* ScanCodeVC.m in Sources */,
+				219028971E7A3ABD002D9733 /* ThirdViewController.m in Sources */,
 				219028801E7A3004002D9733 /* AppDelegate.m in Sources */,
 				219028831E7A3004002D9733 /* FirstViewController.m in Sources */,
 				2190287D1E7A3004002D9733 /* main.m in Sources */,
@@ -278,6 +292,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AP2P93Q7TN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanCode",
+				);
 				INFOPLIST_FILE = ScanCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonifang.ScanCode;
@@ -290,6 +308,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AP2P93Q7TN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ScanCode",
+				);
 				INFOPLIST_FILE = ScanCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonifang.ScanCode;
